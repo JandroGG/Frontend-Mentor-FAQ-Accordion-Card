@@ -59,7 +59,7 @@ body{
     width: 70%;
     height: 500px;
     background-color: white;
-    border-radius: 2%;
+    border-radius: 2em;
 
     display: flex;
     flex-direction: row;
@@ -143,6 +143,7 @@ body{
         min-width: 300px;
         height: 500px;
         margin-top: 20%;
+        border-radius: 2em;
     }
 
     .col-imagen{
