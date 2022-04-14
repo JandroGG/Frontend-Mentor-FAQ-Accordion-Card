@@ -1,0 +1,191 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* #### Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* #### Gradient: */
+    /* --Background-gradient: por averiguar */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* #### Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+  }
+
+/* html {
+
+} */
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(top, var(--Soft-violet), var(--Soft-blue));
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.box-1{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-imagen{
+    
+    width: 100%;
+    overflow: hidden;
+}
+
+.cubo{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: -10%;
+    width: 20%;
+}
+
+.wonman-desk{
+    margin-top: 10%;
+    margin-left: -16%;
+    width: 100%;
+}
+
+.sombras{
+    margin-top: -141%;
+    margin-left: -99%;
+    margin-right: auto;
+    width: 182%;
+}
+
+.col-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 5%;
+    padding-right: 3%;
+}
+
+.title{
+    /* grid-area: faq-tex; */
+     margin-top: 30px;
+     margin-bottom: 10px;
+     font-weight: 700;
+ }
+
+ .contenedor-texto{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+}
+
+.faq{
+    display: grid;
+    grid-template-areas:
+        'question arrow'
+        'answer answer';
+    grid-template-columns: 95% 5%;
+    row-gap: 5px;
+    border-bottom: solid 2px var(--Light-grayish-blue);
+    overflow: hidden;
+    transition: 0.4s;
+    height: 20px;
+}
+
+.question{ 
+    grid-area: question;
+    /* font-weight:100; */
+}
+
+.arrow-dwn{
+    grid-area: arrow;
+    width: 60%;
+    transition: 0.4s;
+}
+
+.answer{ 
+    grid-area: answer;
+}
+
+
+@media (max-width: 600px){
+    .box-1{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        height: 500px;
+        margin-top: 20%;
+        border-radius: 2em;
+    }
+
+    .col-imagen{
+        margin-top: 2%;
+        width: 100%;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .cubo{
+        position: absolute;
+        margin-top: -11.5%;
+        margin-left: 17%;
+        width: 23%;
+    }
+
+    .wonman-desk{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: -34%;
+    }
+
+    .sombras{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: -66%;
+    }
+
+    .col-text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-top: 0px;
+        padding-right: 3%;
+    }
+
+    .title{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        font-weight: 700;
+        text-align: center;
+    }
+}
